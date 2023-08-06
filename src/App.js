@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/css/App.css';
+import Section1 from './components/Sakura.js';
+import Section2 from './components/Education.js';
 
 function App() {
+  const petalsTypes = [
+    'petal-style1',
+    'petal-style2',
+    'petal-style3',
+    'petal-style4',
+  ];
+  const myBlossomSceneConfig = {
+    id: 'blossom_container',
+    numPetals: 5,
+    petalsTypes,
+    gravity: 0.8,
+    windMaxSpeed: 4,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Section1 {...myBlossomSceneConfig} />
+      <Section2 />
+    </>
   );
 }
 
