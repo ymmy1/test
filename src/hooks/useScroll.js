@@ -13,6 +13,7 @@ export default function useScroll(ref, settings, callback) {
       setBind(() => bind);
       setUnbind(() => unbind);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [scrollBind, scrollUnbind];

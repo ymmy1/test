@@ -8,6 +8,10 @@
   height: 100vh;
   overflow-y: scroll;
 }
+#main_container > * {
+  box-sizing: border-box;
+  border-bottom: 5px solid red;
+}
 
 html::-webkit-scrollbar, #main_container::-webkit-scrollbar {
   display: none;
