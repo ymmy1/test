@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
-html::-webkit-scrollbar {
+#main_container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar, #main_container::-webkit-scrollbar {
   display: none;
 }/*# sourceMappingURL=App.css.map */

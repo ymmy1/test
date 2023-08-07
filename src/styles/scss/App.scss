@@ -2,8 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+     
 }
-html::-webkit-scrollbar {
+#main_container{
+  height: 100vh;
+  overflow-y: scroll;
+
+}
+// #root
+// {
+// overscroll-behavior-y: contain;
+// scroll-snap-type: y mandatory;
+// height: 100vh;
+//  scroll-behavior: smooth;
+
+
+//   &>* {
+//     scroll-snap-align: center;
+//     scroll-snap-stop: always;
+//   } 
+// }
+html::-webkit-scrollbar, #main_container::-webkit-scrollbar {
   display: none;
 }
