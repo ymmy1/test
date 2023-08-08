@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+audio {
+  display: none;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  font-size: 2vh;
+  font-family: "Yatra One", cursive;
+}
+nav .navbar-brand {
+  font-size: 2.5vh;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: ease all 0.5s;
+  display: flex;
+  justify-content: center;
+}
+nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+nav .nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .nav-item a:hover {
+  color: #252525;
+  transition: ease all 0.5s;
+}
+nav .nav-item svg {
+  cursor: pointer;
+  color: #fff;
+  stroke: #000;
+}
+nav .nav-item svg:hover {
+  color: #252525;
+  transition: ease all 0.5s;
+}/*# sourceMappingURL=NavBar.css.map */

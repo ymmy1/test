@@ -1,31 +1,18 @@
-.html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#main_container{
+#main_container {
   height: 100vh;
-  overflow-y: scroll;
-  &>*{
+
+  & > * {
     box-sizing: border-box;
     border-bottom: 5px solid red;
   }
-
 }
-// #root
-// {
-// overscroll-behavior-y: contain;
-// scroll-snap-type: y mandatory;
-// height: 100vh;
-//  scroll-behavior: smooth;
-
-
-//   &>* {
-//     scroll-snap-align: center;
-//     scroll-snap-stop: always;
-//   } 
-// }
-html::-webkit-scrollbar, #main_container::-webkit-scrollbar {
+html::-webkit-scrollbar,
+#main_container::-webkit-scrollbar {
   display: none;
 }
