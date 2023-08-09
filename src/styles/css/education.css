@@ -73,14 +73,17 @@
   width: 50px;
 }
 .section_2 .right-box .img-container .img_certificate .certificate {
-  width: 300px;
+  min-width: 100px;
+  box-shadow: 0px 0px 19px -2px rgb(0, 0, 0);
+  max-width: 300px;
+  width: 100%;
   box-shadow: 0px 0px 19px -2px rgb(0, 0, 0);
 }
 .section_2 .right-box .img-container .img_certificate:hover {
   transform: scale(1.1);
 }
 .section_2 #ed_img {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;

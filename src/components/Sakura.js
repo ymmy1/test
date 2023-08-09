@@ -184,11 +184,11 @@ export default class LeafSceneComponent extends Component {
   };
   render() {
     return (
-      <Parallax blur={{ min: -15, max: 5 }} strength={200} bgImage={bg}>
+      <Parallax strength={200} bgImage={bg}>
         <div ref={this.viewportRef} className='relative falling-leaves'>
           <div ref={this.worldRef} style={{ perspective: '400px' }}></div>
           {/* <img className='bg' data-sleed='0.1' src={bg} alt='' /> */}
-          <NavBar />
+          <NavBar main={true} />
           <HeadBox />
           <img className='rocks' src={rocks} alt='' />
         </div>

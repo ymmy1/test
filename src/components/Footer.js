@@ -1,9 +1,10 @@
 import '../styles/css/footer.css';
+import NavBar from './NavBar';
 
-export default function Section2() {
+export default function Footer() {
   return (
     <footer>
-      <span>Footer</span>
+      <NavBar main={false} />
     </footer>
   );
 }

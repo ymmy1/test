@@ -8,8 +8,10 @@ import '../styles/css/NavBar.css';
 
 import { Nav, Navbar } from 'react-bootstrap';
 
-export default function NavBar() {
+export default function NavBar(main) {
+  console.log(main.main);
   const [isPaused, setIsPaused] = useState(true);
+  const [isFooter] = useState(main.main);
 
   const toggle = (action) => {
     let audioElement = document.getElementById('backgroundMusic');
@@ -47,10 +49,12 @@ export default function NavBar() {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <audio id='backgroundMusic' controls autoPlay>
-              <source src={audioFile} type='audio/mpeg' />
-              Your browser does not support the audio element.
-            </audio>
+            {isFooter && (
+              <audio id='backgroundMusic' controls autoPlay>
+                <source src={audioFile} type='audio/mpeg' />
+                Your browser does not support the audio element.
+              </audio>
+            )}
             {isPaused ? (
               <VolumeOffIcon fontSize='medium' onClick={() => toggle('play')} />
             ) : (
