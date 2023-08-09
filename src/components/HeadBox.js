@@ -7,7 +7,7 @@ export default function HeadBox() {
     <div className='head-box'>
       <h1>Oleg Nosyrev</h1>
       <p>Senior Front End Engineer</p>
-      <a className='button' href={resume} download>
+      <a className='button-orange' href={resume} download>
         <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
       </a>
     </div>

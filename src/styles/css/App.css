@@ -1,8 +1,9 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Yatra One", cursive;
 }
 
 #main_container {
@@ -10,7 +11,6 @@ body {
 }
 #main_container > * {
   box-sizing: border-box;
-  border-bottom: 5px solid red;
 }
 
 html::-webkit-scrollbar,
