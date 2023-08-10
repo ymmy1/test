@@ -37,7 +37,9 @@
   font-size: 2vh;
 
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   justify-content: center;
   line-height: 1.25;
   margin: 0;

@@ -1,5 +1,4 @@
 import '../styles/css/skills.css';
-import bg from '../assets/skills.png';
 
 export default function Section2() {
   return (

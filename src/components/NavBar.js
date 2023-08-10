@@ -9,7 +9,6 @@ import '../styles/css/NavBar.css';
 import { Nav, Navbar } from 'react-bootstrap';
 
 export default function NavBar(main) {
-  console.log(main.main);
   const [isPaused, setIsPaused] = useState(true);
   const [isFooter] = useState(main.main);
 
