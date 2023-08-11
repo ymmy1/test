@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
   flex-direction: column;
@@ -10,7 +9,8 @@
 .section_3 .skillsbox {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   opacity: 0;
 }
 .section_3 .skillsbox h4 {
@@ -66,5 +66,18 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .section_3 {
+    justify-content: flex-start;
+    overflow-y: scroll;
+  }
+  .section_3::-webkit-scrollbar {
+    display: none;
+  }
+  .section_3 .skillsbox h4 {
+    font-size: 13vw;
   }
 }/*# sourceMappingURL=skills.css.map */
