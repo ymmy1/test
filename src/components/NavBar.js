@@ -49,7 +49,7 @@ export default function NavBar(main) {
           </Nav.Item>
           <Nav.Item>
             {isFooter && (
-              <audio id='backgroundMusic' controls autoPlay>
+              <audio id='backgroundMusic'>
                 <source src={audioFile} type='audio/mpeg' />
                 Your browser does not support the audio element.
               </audio>

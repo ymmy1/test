@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/css/sakura.css';
-import '../styles/css/main.css';
 import rocks from '../assets/rocks.png';
-import bg from '../assets/bg (1).png';
+import bg from '../assets/bg.png';
 import { Parallax } from 'react-parallax';
 
 import NavBar from './NavBar';
