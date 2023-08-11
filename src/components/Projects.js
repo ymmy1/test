@@ -27,7 +27,7 @@ export default function Projects() {
           {api.map((api, index) => (
             <ProjectBox api={api} key={index} handleOpen={handleOpen} />
           ))}
-          <p className='bottom_text'>Find Our More</p>
+          <p className='bottom_text'>Find Out More</p>
           <div className='bottom_buttons'>
             <a
               className='button-orange'

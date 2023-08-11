@@ -19,7 +19,7 @@
   opacity: 1;
 }
 .section_2 .active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
+  animation: fade-bottom 0.5s ease-in;
 }
 @keyframes fade-bottom {
   0% {
