@@ -26,11 +26,10 @@ const flackyChatContent = (
 );
 const weatherContent = (
   <>
-    <strong>Vue.js weather application</strong>. Uses open source API's from
-    <a href='https://openweathermap.org/'>https://openweathermap.org/</a>
-    to fetch the current weather & forecast for 5 days ahead. Front End side
-    such us all animations, transitions and displaying the data was build in
-    Vue.js
+    <strong>Vue.js weather application</strong>. Uses open source API's from{' '}
+    <a href='https://openweathermap.org/'>https://openweathermap.org/</a> to
+    fetch the current weather & forecast for 5 days ahead. Front End side such
+    us all animations, transitions and displaying the data was build in Vue.js
   </>
 );
 const netflixContent = (

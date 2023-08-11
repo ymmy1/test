@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .section_3 .skillsbox {
   display: flex;
