@@ -8,7 +8,6 @@ import NavBar from './NavBar';
 import HeadBox from './HeadBox';
 
 export default class LeafSceneComponent extends Component {
-  // future sakura leaves code
   constructor(props) {
     super(props);
 

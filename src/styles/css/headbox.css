@@ -55,4 +55,21 @@
 }
 .button-orange:hover {
   transform: translateY(-1px);
+}
+
+@media screen and (max-width: 1440px) {
+  .head-box {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 536px) {
+  .head-box h1 {
+    font-size: 3em;
+  }
+  .head-box p {
+    font-size: 1.3em;
+  }
 }/*# sourceMappingURL=headbox.css.map */

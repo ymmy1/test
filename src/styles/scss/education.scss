@@ -14,6 +14,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    gap: 7%;
   }
 
   .boxes.active {
@@ -21,6 +22,7 @@
   }
   .active.fade-bottom {
     animation: fade-bottom 0.5s ease-in;
+    height: 100vh;
   }
   @keyframes fade-bottom {
     0% {
@@ -36,22 +38,21 @@
   .left-box {
     display: flex;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 80px;
     h4 {
       color: #fff;
-      font-size: 80px;
+      font-size: 4rem;
       padding-bottom: 10px;
     }
     .img-container {
       display: flex;
-      // flex-direction: column;
       justify-content: space-around;
       img {
-        width: 150px;
+        width: 8rem;
         padding-bottom: 10px;
       }
       .uw_title {
-        width: 170px;
+        width: 10rem;
       }
     }
   }
@@ -75,7 +76,7 @@
         .certificate {
           min-width: 100px;
           box-shadow: 0px 0px 19px -2px rgb(0, 0, 0);
-          max-width: 300px;
+          max-width: 500px;
           width: 100%;
           -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
           -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
@@ -94,5 +95,44 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_2 {
+    .boxes {
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+    }
+    #ed_img {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .section_2 {
+    .boxes {
+      justify-content: space-between;
+      .left-box {
+        padding: 40px 0 0 0;
+        h4 {
+          font-size: 15vw;
+          margin: auto;
+        }
+        .img-container {
+          display: none;
+        }
+      }
+      .right-box {
+        padding-bottom: 40px;
+        .img-container {
+          flex-direction: column;
+        }
+      }
+    }
+    #ed_img {
+      left: -150%;
+      width: auto;
+    }
   }
 }
