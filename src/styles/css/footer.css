@@ -8,4 +8,10 @@ footer {
   align-items: center;
   color: #fff;
   font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */
