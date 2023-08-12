@@ -1,0 +1,37 @@
+.entry {
+  background: rgb(255, 177, 177);
+  background: radial-gradient(circle, rgb(255, 177, 177) 0%, rgb(209, 119, 119) 100%);
+  z-index: 99999;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.hide_entry {
+  animation: fade-hide 2s ease-in;
+  opacity: 0;
+  z-index: -999;
+}
+
+@keyframes fade-hide {
+  0% {
+    opacity: 1;
+    z-index: 99999;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -999;
+  }
+}/*# sourceMappingURL=entry.css.map */

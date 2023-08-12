@@ -15,7 +15,6 @@ export default class LeafSceneComponent extends Component {
       width: 0,
       height: 0,
     };
-
     this.viewportRef = React.createRef();
     this.worldRef = React.createRef();
     this.leaves = [];

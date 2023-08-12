@@ -15,7 +15,7 @@
     overflow-y: scroll;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 20px;
     &::-webkit-scrollbar {
       display: none;

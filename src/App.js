@@ -10,7 +10,6 @@ import Footer from './components/Footer.js';
 function App() {
   return (
     <div id='main_container'>
-      {/* <div id='main_container' ref={containerRef}> */}
       <Section1 />
       <Section2 />
       <Section3 />
