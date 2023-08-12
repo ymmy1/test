@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test/static/css/main.ae080ffe.css",
-    "main.js": "/test/static/js/main.0bc2d89b.js",
+    "main.js": "/test/static/js/main.8de57d94.js",
     "static/media/bg.png": "/test/static/media/bg.fc68580dc51208061346.png",
     "static/media/bg_music.mp3": "/test/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/netflix.png": "/test/static/media/netflix.eb1d951d369eb05c3109.png",
@@ -50,6 +50,6 @@
   },
   "entrypoints": [
     "static/css/main.ae080ffe.css",
-    "static/js/main.0bc2d89b.js"
+    "static/js/main.8de57d94.js"
   ]
 }
