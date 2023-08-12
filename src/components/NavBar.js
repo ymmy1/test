@@ -40,7 +40,7 @@ export default function NavBar(main) {
       }
     };
 
-    const interval = setInterval(checkLoadingStatus, 200);
+    const interval = setInterval(checkLoadingStatus, 300);
 
     return () => {
       clearInterval(interval);
@@ -49,9 +49,9 @@ export default function NavBar(main) {
   useEffect(() => {
     const interval = setInterval(() => {
       setLoadingPercentage((prevPercentage) => {
-        const newPercentage = prevPercentage + 1;
-        if (newPercentage >= 100) {
-          clearInterval(interval);
+        let newPercentage = prevPercentage;
+        if (newPercentage < 99) {
+          newPercentage = prevPercentage + 1;
         }
         return newPercentage;
       });
@@ -119,7 +119,7 @@ export default function NavBar(main) {
         <section id='entry_section' className={'entry ' + entryClass}>
           <p>
             {loadingComplete
-              ? 'Website Loaded'
+              ? 'Loading Complete'
               : `Loading ${loadingPercentage}%`}
           </p>
           <button
