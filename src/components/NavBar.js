@@ -40,7 +40,7 @@ export default function NavBar(main) {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   useEffect(() => {
     if (currentText === 'Loading Complete') {
