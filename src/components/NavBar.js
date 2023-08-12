@@ -30,24 +30,21 @@ export default function NavBar(main) {
     toggle('play');
   };
 
-  const texts = useMemo(() => ['Loading...', 'Loading Complete'], []);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentText, setCurrentText] = useState(texts[currentIndex]);
+  const [loadingComplete, setLoadingComplete] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2000);
+    const checkLoadingStatus = () => {
+      if (document.readyState === 'complete') {
+        setLoadingComplete(true);
+      }
+    };
 
-    return () => clearInterval(interval);
-  }, [texts.length]);
+    const interval = setInterval(checkLoadingStatus, 200);
 
-  useEffect(() => {
-    if (currentText === 'Loading Complete') {
-      return; // Stop the timer
-    }
-    setCurrentText(texts[currentIndex]);
-  }, [currentIndex, currentText, texts]);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <>
@@ -104,7 +101,14 @@ export default function NavBar(main) {
       </Navbar>
       {isMain && (
         <section id='entry_section' className={'entry ' + entryClass}>
-          <p>{currentText}</p>
+          <p>
+            {loadingComplete
+              ? 'Website Loaded'
+              : `Loading ${Math.min(
+                  Math.floor((Date.now() / 5000) * 100),
+                  100
+                )}%`}
+          </p>
           <button
             className='button-orange'
             onClick={() => {
