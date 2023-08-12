@@ -31,6 +31,7 @@ export default function NavBar(main) {
   };
 
   const [loadingComplete, setLoadingComplete] = useState(false);
+  const [loadingPercentage, setLoadingPercentage] = useState(1);
 
   useEffect(() => {
     const checkLoadingStatus = () => {
@@ -40,6 +41,21 @@ export default function NavBar(main) {
     };
 
     const interval = setInterval(checkLoadingStatus, 200);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoadingPercentage((prevPercentage) => {
+        const newPercentage = prevPercentage + 1;
+        if (newPercentage >= 100) {
+          clearInterval(interval);
+        }
+        return newPercentage;
+      });
+    }, 100); // Change this interval to control the speed of progress
 
     return () => {
       clearInterval(interval);
@@ -104,10 +120,7 @@ export default function NavBar(main) {
           <p>
             {loadingComplete
               ? 'Website Loaded'
-              : `Loading ${Math.min(
-                  Math.floor((Date.now() / 5000) * 100),
-                  100
-                )}%`}
+              : `Loading ${loadingPercentage}%`}
           </p>
           <button
             className='button-orange'
