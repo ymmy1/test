@@ -59,6 +59,10 @@
   &:hover {
     transform: translateY(-1px);
   }
+  &:disabled {
+    background-color: dimgrey;
+    cursor: not-allowed;
+  }
 }
 
 @media screen and (max-width: 1440px) {

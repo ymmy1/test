@@ -16,9 +16,7 @@ export default function NavBar(main) {
   const [isMain] = useState(main.main);
 
   const toggle = (action) => {
-    console.log('STARTS');
     let audioElement = document.getElementById('backgroundMusic');
-    console.log(audioElement);
     if (audioElement) {
       if (action === 'play') audioElement.play();
       else audioElement.pause();
@@ -124,6 +122,7 @@ export default function NavBar(main) {
           </p>
           <button
             className='button-orange'
+            disabled={!loadingComplete}
             onClick={() => {
               enter();
             }}
